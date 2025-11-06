@@ -66,7 +66,14 @@ pip install pandas numpy scikit-learn matplotlib seaborn joblib
 
 1. Clone this repository:
    ```bash
-   git clone [Your GitHub URL]
+   git init ispa
+   cd ispa
+   git remote add origin https://github.com/ancybjohn02/course_projects.git
+   git config core.sparseCheckout true
+   git config core.sparseCheckoutCone true
+   echo "ISPA/Case Study 2/" >> .git/info/sparse-checkout
+   
+   git pull origin main
    ```
 
 2. Open the Jupyter Notebook file (`[model].ipynb`).
